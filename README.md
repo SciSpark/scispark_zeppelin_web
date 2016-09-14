@@ -1,14 +1,12 @@
 # scispark_zeppelin_web
-Zeppelin code with SciSpark skin
+Zeppelin with SciSpark skin
  
-Download Zeppelin and buid
-
-download latest veriosn from source
+Download Zeppelin from its website
 https://zeppelin.incubator.apache.org/download.html
+Build to create WAR file
 
-Build
-mvn clean package -DskipTests
+Copy the WAR file into local maven repo:
+~/.m2/repository/org/apache/zeppelin/zeppelin-web/0.6.0-SNAPSHOT/
 
-copy zeppelin-web/target/zeppelin*.war file into ext folder
-
-mvn clean install 
+Git clone this repo and build
+``` mvn clean package -DskipTests ```
